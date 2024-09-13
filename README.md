@@ -6,29 +6,40 @@ We developed a machine learning-based solution using Digital Terrain Model (DTM)
 
 # Results Achieved
 Precision: 57.3% of the detected objects were true positives.
+
 Recall: 55.9% of actual mounds were successfully identified.
+
 The balance between precision and recall indicates robust performance in identifying and detecting mounds.
-Metrics such as training and validation loss, as well as precision and recall scores, showed consistent improvement over the course of training.
+
+Metrics such as training and validation loss, as well as precision and recall scores, showed consistent improvement throughout training.
 
 # Tech Stack
    # Tools and Platforms:
 Quantum Geographic Information System (QGIS): Used for preprocessing DTM data and applying the hillshade function.
+
 LabelImg: For image annotation and labeling.
 
 # Frameworks and Libraries:
 YOLOv5: The primary model used for object detection.
+
 OpenCV (cv2): Used for image processing during the prediction phase.
+
 Python: For scripting, model development, and data manipulation.
+
 Pandas, NumPy: Libraries for data handling and manipulation.
 
 # Model Training:
 YOLOv5s.yaml: Configuration for the YOLOv5 model architecture.
+
 Stochastic Gradient Descent (SGD): Optimizer with a learning rate of 0.01 for training.
+
 Data Augmentation: Techniques such as image rotation, blur, grayscale conversion, and CLAHE were applied to enhance the model’s generalization ability.
 
 # Future Enhancements
 Dataset Expansion: Increase the number of samples using Generative Adversarial Networks (GANs) to improve model performance.
+
 Statewide Predictions: Scale the model to predict mounds across the entire state of Indiana.
+
 Probability Mapping: Generate a probability map to provide confidence levels for predictions at each location.
 
 # Conclusion
